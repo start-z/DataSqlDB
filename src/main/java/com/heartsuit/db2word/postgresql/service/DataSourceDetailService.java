@@ -31,4 +31,6 @@ public interface DataSourceDetailService {
      * @throws DocumentException
      */
     void toWord(List<Map<String, Object>> tables) throws FileNotFoundException, DocumentException;
+
+    void toWordAllTable(List<Map<String, Object>> tableNames)throws FileNotFoundException, DocumentException;
 }

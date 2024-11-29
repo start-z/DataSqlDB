@@ -41,4 +41,10 @@ class DataSourceDetailServiceImplTest {
         List<Map<String, Object>> tableNames = dataSourceDetailService.getAllTableNames();
         dataSourceDetailService.toWord(tableNames);
     }
+
+    @Test
+    public void toWordAllTable() throws FileNotFoundException, DocumentException {
+        List<Map<String, Object>> tableNames = dataSourceDetailService.getAllTableNames();
+        dataSourceDetailService.toWordAllTable(tableNames);
+    }
 }
